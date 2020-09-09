@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Playfair Display, serif, Arial, Helvetica;
+    --link-color: #854f4f;
+    z-index: -1;
+    display: inline-block;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 4vw;
+    text-shadow: 0 0 20px #884daa, 0 0 20px red, 0 0 20px yellow;
+    color: #58008b;
+    text-align: center;
+    position: relative;
+}
+
+header #cloud {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 80%;
+    display: block;
+}
+
+header div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: -5vw 0;
+}
+
+header .logos {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin: 20vw 0 0 0;
+}
+
+.logos img {
+    width: 70px;
+    height: auto;
+}
+
+.logos img {
+    position: relative;
+    margin: 0 6vw;
+    flex-direction: row !important;
+}
+
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    padding: 15px 25px;
+    background-color: #e6e6e6;
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: 40px 40px auto 84px;
+}
+
+nav a {
+    color: #1d1d1d;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--link-color, #884daa);
+    text-shadow: 0 0 20px var(--link-color, #884daa);
+}
+
+nav #name {
+    color: black;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+}
+
+main article {
+    float: right;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about,
+.contact {
+    display: flex;
+    flex-direction: row !important;
+    clear: both;
+    padding: 30px;
+}
+
+.about {
+    background: linear-gradient(45deg, rgb(34, 146, 187), #ed81f7);
+}
+
+.contact {
+    background: linear-gradient(45deg, rgb(153, 235, 59), #eea34e);
+}
+
+.image {
+    display: block;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.words {
+    height: auto;
+    display: block;
+    line-height: 25px;
+    letter-spacing: 0.7px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+    background-color: #71abd1;
+    height: 50px;
+}
+
+@media screen and (max-width: 1900px) {
+    article div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    article .about, .contact {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    article div {
+        padding: 0;
+    }
+}
