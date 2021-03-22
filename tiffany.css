@@ -70,6 +70,7 @@ nav a {
 nav a:hover {
   color: var(--link-color, #884daa);
   text-shadow: 0 0 20px var(--link-color, #884daa);
+  transition: all 0.3s ease;
 }
 
 main {
@@ -101,6 +102,7 @@ main .side a {
 
 main .side a:hover {
   color: purple;
+  transition: all 0.3s ease;
 }
 
 article .reviews, .location, .services, .schedule, .spa, .health, .eyelash, .penalty, .faq {
@@ -170,7 +172,7 @@ footer {
   width: 100%;
 }
 
-.reviews h2 {
+.reviews h2, p {
   padding-bottom: 30px;
 }
 
@@ -242,7 +244,7 @@ footer {
     flex-direction: column;
   }
 
-  .reviews .reviews_left {
+  .reviews .reviews_left, p {
     padding-bottom: 15px;
   }
 }
