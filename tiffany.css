@@ -45,9 +45,6 @@ header .logos {
 .logos img {
   width: 70px;
   height: auto;
-}
-
-.logos img {
   position: relative;
   margin: 0 6vw;
   flex-direction: row !important;
