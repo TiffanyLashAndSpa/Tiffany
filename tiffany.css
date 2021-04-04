@@ -153,12 +153,10 @@ td {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   clear: both;
   background-color: #71abd1;
-  height: 50px;
+  padding: 16px 0;
 }
 
 .reviews_container {
