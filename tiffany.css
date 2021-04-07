@@ -1,8 +1,6 @@
 body {
-  margin: 0;
   font-family: Playfair Display, serif, Arial, Helvetica;
   --link-color: #854f4f;
-  z-index: -1;
   display: inline-block;
 }
 
@@ -168,7 +166,7 @@ footer {
   width: 100%;
 }
 
-.reviews h2, p {
+.reviews h2, .reviews p {
   padding-bottom: 30px;
 }
 
