@@ -1,6 +1,8 @@
 body {
+  margin: 0;
   font-family: Playfair Display, serif, Arial, Helvetica;
-  --link-color: #854f4f;
+  --link-color: #8231b1;
+  z-index: -1;
   display: inline-block;
 }
 
@@ -10,10 +12,21 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  line-height: 2rem;
+  background: linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
+}
+
+h2 {
+  color: var(--link-color);
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+  line-height: 2.25rem;
+  text-align: center;
+  letter-spacing: 0.10rem;
+}
+
 header {
-  font-size: 4vw;
-  text-shadow: 0 0 20px #884daa, 0 0 20px red, 0 0 20px yellow;
-  color: #58008b;
   text-align: center;
   position: relative;
 }
@@ -26,47 +39,82 @@ header #cloud {
   display: block;
 }
 
-header div {
+header .title {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: -5vw 0;
+  font-size: 4vw;
+  text-shadow: 0 0 20px #884daa, 0 0 20px red, 0 0 20px yellow;
+  color: #58008b;
+  width: 100%;
 }
 
-header .logos {
+.social-media {
+  list-style-type: none;
+  display: flex;
   position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: row;
-  margin: 20vw 0 0 0;
 }
 
-.logos img {
+.fab {
+  font-size: 5.5rem;
   width: 70px;
   height: auto;
   position: relative;
-  margin: 0 6vw;
-  flex-direction: row !important;
+  flex-direction: row;
+  text-shadow: 0 0 20px whitesmoke;
+  margin: 0 2em;
+}
+
+.social-media ul li a {
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.fab:hover {
+  transform: translate(0, -5%);
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-yelp {
+  color:#c41200;
+}
+
+.fa-facebook:hover {
+  color: #2c4577;
+}
+
+.fa-yelp:hover {
+  color: #dd220d;
 }
 
 nav {
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
-  padding: 10px 25px;
   background-color: #e6e6e6;
+  text-align: center;
+  display: flex;
 }
 
 nav a {
   color: #1d1d1d;
   text-decoration: none;
-  padding-right: 20px;
+  text-align: center;
+  padding: 7px 15px;
 }
 
 nav a:hover {
-  color: var(--link-color, #884daa);
-  text-shadow: 0 0 20px var(--link-color, #884daa);
-  transition: all 0.3s ease;
+  background-color: #3d6bc7;
+  color: ghostwhite;
 }
 
 main {
@@ -85,7 +133,7 @@ main .side {
   text-align: center;
   background-color: #000000;
   width: 7em !important;
-  height: 37.3em;
+  height: 800px;
   vertical-align: middle;
   border-radius: 0 20px 20px 0;
 }
@@ -105,8 +153,7 @@ article .reviews, .location, .services, .schedule, .spa, .health, .eyelash, .pen
   display: flex;
   flex-direction: row !important;
   clear: both;
-  padding: 30px;
-  background: linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
+  padding: 20px 50px;
 }
 
 .image {
@@ -116,6 +163,8 @@ article .reviews, .location, .services, .schedule, .spa, .health, .eyelash, .pen
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
+  min-width: 50%;
 }
 
 .words {
@@ -126,6 +175,9 @@ article .reviews, .location, .services, .schedule, .spa, .health, .eyelash, .pen
   display: flex;
   flex-direction: column;
   padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #fix {
@@ -158,40 +210,23 @@ footer {
   padding: 16px 0;
 }
 
-.reviews_container {
-  display: flex;
-  flex-direction: row;
-  clear:both;
-  line-height: 30px;
-  width: 100%;
-}
-
-.reviews h2, .reviews p {
-  padding-bottom: 30px;
-}
-
-.reviews:first-child {
-  display: flex;
-  flex-direction: column !important;
-  justify-content: center;
-  align-items: center;
-  clear: both;
-}
-
-.reviews_container .reviews_left, .reviews_right {
-  display: flex;
-  flex: 50%;
-  flex-direction: column;
+hr {
+  color: rgb(157, 205, 224);
+  transition: all 0.4s ease-in-out;
+  height: 5px;
+  border: solid rgb(157, 205, 224) 2.5px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1900px) {
-  [alt="Cosmetics"], [alt="FAQ"] {
-    width: auto;
-    height: 30vw;
-  }
   article div {
     display: flex;
     align-items: center;
+  }
+
+  .fab {
+    font-size: 5rem;
+    margin: 0 1.1em;
   }
 }
 
@@ -205,6 +240,12 @@ footer {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
+    padding: 15px 0;
+  }
+
+  .fab {
+    margin: 0 0.5em;
+    font-size: 3.25rem;
   }
 
   .image {
