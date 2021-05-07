@@ -153,6 +153,10 @@ main .side a:hover {
   width: 100%;
 }
 
+.reviews h2, .reviews p {
+  text-align: center;
+}
+
 article .reviews, .location, .services, .schedule, .spa, .health, .eyelash, .penalty, .faq {
   display: flex;
   flex-direction: row !important;
