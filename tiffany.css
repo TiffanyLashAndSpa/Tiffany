@@ -289,8 +289,8 @@ hr {
   }
 
   .image {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: 540px !important;
     padding: 30px 0;
   }
 
