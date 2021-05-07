@@ -38,7 +38,7 @@ header #cloud {
 
 header .title {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4vw;
@@ -51,7 +51,7 @@ header .title {
   list-style-type: none;
   display: flex;
   position: absolute;
-  top: 85%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -184,7 +184,7 @@ article .reviews, .location, .services, .schedule, .spa, .health, .eyelash, .pen
   align-items: center;
   object-fit: cover;
   min-width: 50%;
-  max-height: 800px;
+  max-height: 800px !important;
   padding: 30px;
 }
 
