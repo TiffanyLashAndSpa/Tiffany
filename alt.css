@@ -172,11 +172,6 @@ footer {
 }
 
 @media screen and (max-width: 1900px) {
-    article div {
-        display: flex;
-        align-items: center;
-    }
-
     .fab {
         font-size: 5rem;
         margin: 0 1.1em;
@@ -184,7 +179,6 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-
     article .about,
     .contact {
         display: flex;
