@@ -37,7 +37,7 @@ header #cloud {
 
 header .title {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4vw;
@@ -50,7 +50,7 @@ header .title {
     list-style-type: none;
     display: flex;
     position: absolute;
-    top: 85%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -111,6 +111,7 @@ nav a {
 nav a:hover {
     background-color: #3d6bc7;
     color: ghostwhite;
+    transition: all 0.3s ease-in-out;
 }
 
 main {
@@ -179,6 +180,7 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+
     article .about,
     .contact {
         display: flex;
