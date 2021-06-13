@@ -1,419 +1,321 @@
-<!DOCTYPE html>
-<html lang="en-US">
+body {
+  margin: 0;
+  font-family: Playfair Display, serif, Arial, Helvetica;
+  --link-color: #8231b1;
+  z-index: -1;
+  display: inline-block;
+  line-height: 2rem;
+  background: linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
+}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Tiffany Lash & Spa: Provides eyelash extension, facial, and cosmetic products" />
-  <meta name="keytext"
-    content="Tiffany Lash & Spa,Tiffany Lash and Spa,Tiffany,Spa,eyelash,facial,cosmetics,high quality,Bellevue" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="images/favicon.ico?v=2" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="tiffany.css" />
-</head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<body>
-  <header>
-    <img id="cloud" src="images/ocean3.jpg" />
-    <div class="title">
-      <h1>Tiffany Lash & Spa</h1>
-    </div>
-    <ul class="social-media">
-      <li>
-        <a target="_blank" href="https://www.facebook.com/Tiffany-Lash-Spa-100665078441316"><i
-            class="fab fa-facebook"></i></a>
-      </li>
-      <li>
-        <a target="_blank"
-          href="https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"><i
-            class="fab fa-yelp"></i></a>
-      </li>
-    </ul>
-  </header>
+h2 {
+  color: var(--link-color);
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  text-align: center;
+  letter-spacing: 0.10rem;
+  padding: 0 0 30px 0;
+}
 
-  <nav>
-    <a href="about.html#bottom">About</a>
-    <a href="contact.html#bottom">Contact</a>
-  </nav>
+header {
+  text-align: center;
+  position: relative;
+}
 
-  <main>
-    <div class="side">
-      <a href="#reviews">Reviews</a>
-      <a href="#location">Location</a>
-      <a href="#services">Services</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#spa">Spa</a>
-      <a href="#health">Health</a>
-      <a href="#eyelash">Eyelash</a>
-      <a href="#faq">FAQ</a>
-      <hr size="1" width="100%" style="color: purple; margin: 10px 0" />
-      <a target="_blank" href="https://www.facebook.com/Tiffany-Lash-Spa-100665078441316" target="_blank">Facebook</a>
-      <a target="_blank"
-        href="https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
-        target="_blank">Yelp Reviews</a>
-      <hr size="1" width="100%" style="color: purple; margin: 10px 0" />
-      <a href="#top">[Top of Page]</a>
-      <a href="#bottom">[Bottom of Page]</a>
-    </div>
+header #cloud {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 80%;
+  display: block;
+}
 
-    <article>
-      <div class="reviews" id="reviews">
-        <img class="image" src="images/review.jpg" placeholder="review.jpg">
-        <div class="reviews-wrapper">
-          <h2>Reviews and Clarifications</h2>
-          <p class="text">Please don't put false information on our reviews, be honest. Thank you.</p>
-          <div class="text">
-            <h3>Alluring Mink Lash</h3>
-            <ul>
-              <li>We only use this kind of material</li>
-              <li>high quality</li>
-              <li>go down to the eyelash section below for further information: brand, quality, and other info.</li>
-            </ul>
-          </div>
-          <div class="text">
-            <h3>Synthetic Lash</h3>
-            <ul>
-              <li>We don't have or serve this</li>
-              <li>In the reviews, someone said we did use this.</li>
-              <li>cheaper</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+header .title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  text-shadow: 0 0 20px #884daa, 0 0 20px red, 0 0 20px yellow;
+  color: #58008b;
+  width: 100%;
+}
 
-      <hr>
+.social-media {
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+}
 
-      <div class="location" id="location">
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.1301141382132!2d-122.15520168403219!3d47.62360197918582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906daad5d24f23%3A0xbc37248cb532bb45!2sTiffany%20Lash%20%26%20Spa!5e0!3m2!1sen!2sus!4v1599622006246!5m2!1sen!2sus"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0">
-          </iframe>
-        </div>
-        <div class="text">
-          <h2>Location</h2><br>
-          <p>
-            <strong>Address</strong>: 1530 140th Ave NE #112 Bellevue, WA 98005<br /><br>
-            Area: Creekside<br>
-            It's near Safeway, Applebee's Grill, and Highland Park.
-          </p>
-        </div>
-      </div>
+.fab {
+  font-size: 5.5rem;
+  width: 70px;
+  height: auto;
+  position: relative;
+  flex-direction: row;
+  text-shadow: 0 0 20px whitesmoke;
+  margin: 0 2em;
+}
 
-      <hr>
+.social-media ul li a {
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
 
-      <div class="services" id="services">
-        <img class="image" src="images/cosmetics8.jpg" alt="Services" />
-        <div class="text">
-          <h2>Services</h2>
-          <ul>
-            <li>
-              <b>One full set of mink mascara</b> (around 60 lashes per eye, 1
-              hr.): $89
-            </li>
-            <li>
-              <b>One full set of mink dramatic</b> (around 80 lashes per eye, 1
-              hr.): $99
-            </li>
-            <li>
-              <b>Regular Vitamin Anti-Aging Facial</b> (2 kinds of therapy, 1
-              hr.): $69
-            </li>
-            <li>
-              <b>Premium Vitamin Anti-Aging Facial</b> (4 kinds of therapy, 1
-              hr.): $89
-            </li>
-            <br />
-          </ul>
-          <h2>Products</h2>
-          Also we're selling High Quality European Cosmetics, come by to our Spa
-          to purchase.
-        </div>
-      </div>
+.fab:hover {
+  transform: translate(0, -5%);
+  transition: all 0.5s ease-in-out;
+}
 
-      <hr>
+.fa-facebook {
+  color: #3b5998;
+}
 
-      <div class="schedule" id="schedule">
-        <div class="table">
-          <table>
-            <thead>
-              <tr>
-                <th>Days</th>
-                <th>Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Monday</td>
-                <td>10:00 AM - 4:00 PM</td>
-              </tr>
-              <tr>
-                <td>Tuesday</td>
-                <td>10:00 AM - 4:00 PM</td>
-              </tr>
-              <tr>
-                <td>Wednesday</td>
-                <td>10:00 AM - 4:00 PM</td>
-              </tr>
-              <tr>
-                <td>Thursday</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <td>Friday</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <td>Saturday</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <td>Sunday</td>
-                <td>10:00 AM - 4:00 PM</td>
-              </tr>
-            </tbody>
-            <caption>Temporary*</caption>
-          </table>
-        </div>
-        <div class="text">
-          <h2>Schedule</h2><br>
-          <p>
-            We are open from Monday to Wednesday and Friday at 10 AM to 6 PM. You can either call or text to make an
-            appointment for eyelash extension, facial, or if you have any questions. Also, we sell cosmetics so come by
-            at this time to check them out.
-            Phone: (425)-531-8481
-          </p>
-        </div>
-      </div>
+.fa-yelp {
+  color:#c41200;
+}
 
-      <hr>
+.fa-facebook:hover {
+  color: #2c4577;
+}
 
-      <div class="spa" id="spa">
-        <img class="image" src="images/cosmetics1.jpg" alt="Cosmetics">
-        <div class="text">
-          <h2>Why You Should Come to Our Spa</h2><br>
-          <p>
-            Eyelash extensions will give you longer, thicker and very natural looking eyelashes. They look so natural
-            no one will know they are not yours! Eyelash extensions are worn by famous celebrities like Nicole Kidman,
-            Star Jones, Paris Hilton, Kim Kardashian, Lindsay Lohan, Gwen Stefani, Lucy Liu, Naomi Campbell and Liz
-            Hurley
-            to name a few. But you don't have to be a celebrity to wear them. Women everywhere are catching on and
-            becoming Lash Addicted!<br><br>
+.fa-yelp:hover {
+  color: #dd220d;
+}
 
-            LASH OUT! eyelash extension professionals specialize in this revolutionary new service that will extend your
-            natural eyelashes and draw attention to your eyes. Extensions are perfect for everyday wear as well as
-            special
-            occasions. They are semi-permanent and made from synthetic fibers. Each lash is applied one by one to your
-            own natural lashes. With proper care and touchup visits they can last a very long time. Normally a person's
-            natural eyelash falls out every 60 - 90 days and a new lash grows in immediately. Therefore, it is necessary
-            to
-            get touch-ups to fill in the fallen lashes. About every 2 to 3 weeks is recommended, however, this will vary
-            from
-            person to person. Your natural lash cycle as well as how you take care of your lashes will affect how long
-            they
-            last. Some LASH OUT! clients have had their extensions for over a year with regular touchups visits.<br><br>
+nav {
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  background-color: #e6e6e6;
+  text-align: center;
+  display: flex;
+}
 
-            The extensions are single strands of synthetic eyelashes that are curved to replicate a natural eyelash.
-            They
-            provide length and thickness to your own lashes and are available in varying lengths and thickness. They are
-            applied to your individual eyelashes, one lash at a time. There is no need for mascara even though a water
-            based mascara is fine to use. The result is thicker, longer, eye opening eyelashes that are safe in the
-            shower,
-            while swimming, sleeping or exercising.<br><br>
+nav a {
+  color: #1d1d1d;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 15px;
+}
 
-            Eyelash extensions are great for everyday wear or special occasions. Eyelash extensions brighten and open
-            your eyes. Eyelash extensions have gained a tremendous amount of popularity in the last couple of years
-            because the look achieved is so natural. Whether you are looking for an everyday look, lashes for your
-            wedding
-            day or just a weekend away LASH OUT! professionals have a perfected technique that will transform your look
-            to WOW!
-          </p>
-        </div>
-      </div>
+nav a:hover {
+  background-color: #3d6bc7;
+  color: ghostwhite;
+  transition: all 0.3s ease-in-out;
+}
 
-      <hr>
+main {
+  display: flex;
+  align-items: stretch;
+}
 
-      <div class="health" id="health">
-        <img class="image" id="fix" src="images/health1.jpg" alt="Health">
-        <div class="text">
-          <h2>Health Concerns</h2><br>
-          <p><b>What should you do before your Eyelash Extension appointment?</b><br>
-            Inform your eyelash extension professional any information on adhesive allergies when making the
-            appointment.
-            Any type of allergy to band aids, glues, stickers, and/or rubber can cause a reaction. Your extensionist can
-            perform a patch test on your skin to check for a possible allergy to the adhesive. The patch test will take
-            about 15
-            minutes so let the person taking the appointment know that you have concerns about an allergic reaction.
-            Remove any eye make-up, including mascara. Cleanse your eyelids & lashes thoroughly.
-            The entire eye area should be cosmetic-free so that the stylist can get an unobstructed view of your natural
-            lashes. Most eyelash extensionist will then cleanse the eye with a special cleanser to remove proteins and
-            oil
-            residue. A clean surface is vital in creating a strong bond.
-            Remove contact lenses before application.<br>
-            <strong>What should you do After your Eyelash Extension appointment?</strong>
-            <ul>
-              <li>Do not perm or tint lashes after lash extension application.</li>
-              <li>Do not use a regular eyelash curler to curl Extensions (you won't need to curl your extensions).</li>
-              <li>Do not rub your eyes or lashes when washing your face. Clean around the eyes with a wash cloth.</li>
-              <li>Do not pull your lash extensions, as it will take out your own lash as well!</li>
-              <li>Do not go in a Sauna while wearing Eyelash Extensions for at least for 48hrs. Do not get them wet at
-                all for 24hrs.</li>
-              <li>If you choose to wear mascara - only apply to the tips and use water-based mascara that washes off
-                easily.</li>
-              <li>Do not try to remove the Extensions on your own, call me and I will remove them without harming your
-                natural lashes.</li>
-              <li>Do not cut the Extensions (you may cut your own lashes).</li>
-              <li>Clean your eye make-up, but be gentle with your Extensions.</li>
-              <li>Remember to come in for touch ups (2-4 weeks).</li>
-              <li>Never tug, twist, pick or pull at your lashes or extensions.</li>
-              <li>Treat your eyes gently - as if you have makeup on that you don't want to smudge.</li>
-              <li>Brush and groom your lashes gently with a disposable mascara spoolie or eye shadow brush (best
-                choice).</li>
-              <li>Try to sleep on your back or side, avoid smashing your lashes completely as you sleep.</li>
-              <li>When using night creams/serums, apply sparingly and blot off excess.</li>
-              <li>When you touch your lashes, always use upward, sweeping motions - no side to side rubbing at the lash
-                line.</li>
-              <li>Keep your fingers off your lashes. Every time you touch them you are transferring natural oil and
-                germs.</li>
-            </ul>
-          </p>
-        </div>
-      </div>
+main .side {
+  display: flex;
+  flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 51px;
+  z-index: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #ecc14a;
+  width: 7em !important;
+  height: 810px;
+  vertical-align: middle;
+  border-radius: 0 20px 20px 0;
+}
 
-      <hr>
+main .side a {
+  color: #256fa0;
+  text-decoration: none;
+  padding: 10px 0;
+}
 
-      <div class="eyelash" id="eyelash">
-        <img class="image" id="fix" src="images/cosmetics10.jpg" alt="Eyelashes">
-        <div class="text">
-          <h2>Eyelash Product Information</h2><br>
-          <p>
-            <b>REVITALASH® ADVANCED</b><br>
-            Eyelash Conditioner<br>
-            Original, one-of-a-kind, Ophthalmologist developed lash conditioner that enhances the look of lashes and
-            protects against breakage, while improving health, flexibility and strength, for lashes that thrive,
-            naturally.<br>
-            Features and benefits:<br>
-            <ul>
-              <li>Conditions the eyelashes to help protect from brittleness and breakage.</li>
-              <li>Helps improve flexibility, moisture and shine.</li>
-              <li>Helps defend eyelashes from daily aggressors.</li>
-              <li>Enhances the appearance of beautiful, younger-looking, more luxurious eyelashes.</li>
-              <li>High impact BioPeptin Complex™, peptides and botanicals saturate the lashes with moisture, keeping
-                them soft, luxurious and healthy-looking.</li>
-            </ul>
-            In a study:
-            <ul>
-              <li>98% of users reported improved lash appearance.</li>
-              <li>98% of users reported healthier-looking lashes.</li>
-              <li>98% of users reported stronger lashes.</li>
-            </ul>
-            How to use: Wash hands and face with a mild soap and water. Let face and eye area dry completely prior to
-            application. Once a day, apply a thin line to clean and dry eyelashes above the level of the skin. One brush
-            stroke is sufficient to cover eyelashes. Only a small quantity is needed to beautify and promote the
-            attractiveness of natural lashes. For best results, use consistently. Be sure to let dry before applying
-            makeup. If using a makeup remover, be sure to wash off all residue prior to application. There is no added
-            benefit to using more than once per day.<br>
-            $150.00/each ( 3.5ML )
-          </p>
-        </div>
-      </div>
+main .side a:hover {
+  color: purple;
+  transition: all 0.3s ease-in-out;
+}
 
-      <hr>
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-      <div class="penalty" id="penalty">
-        <img class="image" src="images/money1.jpg" alt="Penalty">
-        <div class="text">
-          <h2>Penalty</h2><br>
-          <p>If an appointment is not cancelled within 24 hours in advance, you will be charged with a $50 fee.</p>
-        </div>
-      </div>
+.reviews-wrapper {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-      <hr>
+.reviews > text {
+  text-align: center;
+  width: 100%;
+}
 
-      <div class="faq" id="faq">
-        <img class="image" src="images/faq1.jpg" alt="FAQ"></img>
-        <div class="text">
-          <h2>FAQ</h2><br>
-          <ul>
-            <li>
-              <b>How can I contact you?</b><br />Call or text only on
-              (425)-531-8481
-            </li>
-            <li>
-              <b>How can I make a reservation for an appointment?</b><br />Call or text only on (425)-531-8481
-            </li>
-            <li>
-              <b>When are you guys open?</b><br />From Tuesday to Saturday at
-              10:00 AM to 6:00 PM.
-            </li>
-            <li>
-              <b>Where are you located?</b><br />1530 140th AVE NE #112
-              Bellevue, WA 98005
-            </li>
-            <li>
-              <b>How much do your services cost?</b><br />
-              One full set of mink mascara (around 60 lashes per eye, 1 hr.):
-              $89<br />
-              One full set of mink dramatic (around 80 lashes per eye, 1 hr.):
-              $99<br />
-              Regular Vitamin Anti-Aging Facial (2 kinds of therapy, 1 hr.):
-              $69<br />
-              Premium Vitamin Anti-Aging Facial (4 kinds of therapy, 1 hr.):
-              $89
-            </li>
-            <li>
-              <b>How much are your Cosmetic Products?</b><br />Prices vary, to
-              purchase come by to our Spa.
-            </li>
-            <li>
-              <b>What is the approximate duration of the service?</b><br />About an hour.
-            </li>
-            <li>
-              <b>Are there any health risks?</b><br />Check out our Health
-              Concerns and Care post for information.
-            </li>
-            <li>
-              <b>Why you should come to our Spa?</b><br />Check our posts
-              above: Why You Should Come To Our Spa, Eyelash Product
-              Information, Facial Information, and Reviews.
-            </li>
-            <li>
-              <b>Are your products safe and high quality?</b><br />Yes, check
-              out our posts above: Health, Eyelash Product Information, and
-              Facial Information.
-            </li>
-            <li>
-              <b>Can I buy cosmetics?</b><br />Yes, come to our Spa. There are
-              10+ High Quality European Cosmetics
-            </li>
-            <li>
-              <b>How can I cancel or reschedule my appointment?</b><br />Call
-              or text within 24 hours or you'll be fined $50.
-            </li>
-            <li>
-              <b>Where can I check the reviews?</b><br />Yelp Review Website:
-              <a style="color: rgb(150, 100, 117);" href="https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue"
-                target="_blank">
-                https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue
-              </a>
-            </li>
-            <li>
-              <b>Do you guys have a social media account?</b> Yes, here's our link to facebook:
-              <a style="color: rgb(150, 100, 117);" href="https://www.facebook.com/Tiffany-Lash-Spa-100665078441316"
-                target="_blank">
-                https://www.facebook.com/Tiffany-Lash-Spa-100665078441316
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </main>
+article .reviews, .location, .services, .schedule, .spa, .health, .eyelash, .penalty, .faq {
+  display: flex;
+  flex-direction: row !important;
+  clear: both;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  <footer>
-    <p id="bottom">Tiffany Lash & Spa</p>
-  </footer>
-  <script src="https://kit.fontawesome.com/e3083b4528.js" crossorigin="anonymous"></script>
-</body>
+.image {
+  display: block;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  min-width: 50%;
+  max-height: 800px !important;
+  padding: 30px;
+}
 
-</html>
+.text {
+  height: auto;
+  display: block;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#fix {
+  width: auto;
+  height: 85vh;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+  height: 30em;
+}
+
+.table {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid black;
+}
+
+footer {
+  text-align: center;
+  clear: both;
+  background-color: #71abd1;
+  padding: 16px 0;
+}
+
+hr {
+  color: rgb(157, 205, 224);
+  transition: all 0.4s ease-in-out;
+  height: 5px;
+  border: solid rgb(157, 205, 224) 2.5px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1900px) {
+  .fab {
+    font-size: 5rem;
+    margin: 0 1.1em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .side {
+    display: none;
+  }
+
+  .reviews h2 {
+    margin-top: 30px;
+  }
+
+  .reviews-wrapper {
+    flex-direction: column;
+  }
+
+  article .reviews, .location, .services, .schedule, .spa, .health, .eyelash, .penalty, .faq {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fab {
+    margin: 0 0.5em;
+    font-size: 3.25rem;
+  }
+
+  .image {
+    width: 100% !important;
+    height: 540px !important;
+    padding: 30px 0;
+  }
+
+  .map {
+    padding: 30px 0 0 0 !important;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 70vw !important;
+  }
+
+  #fix {
+    width: auto;
+    height: 50vw;
+  }
+
+  table {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
