@@ -95,6 +95,7 @@ header .title {
 }
 
 nav {
+  top: 0;
   position: sticky;
   position: -webkit-sticky;
   background-color: #e6e6e6;
@@ -106,7 +107,7 @@ nav a {
   color: #1d1d1d;
   text-decoration: none;
   text-align: center;
-  padding: 7px 15px;
+  padding: 0 15px;
 }
 
 nav a:hover {
@@ -151,6 +152,7 @@ main .side a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .reviews-wrapper {
@@ -160,8 +162,9 @@ main .side a:hover {
   width: 100%;
 }
 
-.reviews h2, .reviews p {
+.reviews > text {
   text-align: center;
+  width: 100%;
 }
 
 article .reviews, .location, .services, .schedule, .spa, .health, .eyelash, .penalty, .faq {
