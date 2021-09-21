@@ -254,11 +254,14 @@ footer {
 }
 
 hr {
+  background: rgb(157, 205, 224);
   color: rgb(157, 205, 224);
   transition: all 0.4s ease-in-out;
-  height: 5px;
+  width: 95%;
+  height: 2px;
   border: solid rgb(157, 205, 224) 2.5px;
-  border-radius: 50%;
+  border-radius: 20px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1900px) {
