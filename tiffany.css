@@ -128,7 +128,7 @@ main .side {
   position: sticky;
   top: 51px;
   z-index: 0;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background-color: #ecc14a;
   width: 7em !important;
