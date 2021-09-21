@@ -107,7 +107,9 @@ nav a {
   color: #1d1d1d;
   text-decoration: none;
   text-align: center;
-  padding: 0 15px;
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
 }
 
 nav a:hover {
@@ -251,6 +253,8 @@ footer {
   clear: both;
   background-color: #71abd1;
   padding: 9px 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
 }
 
 hr {
