@@ -132,7 +132,7 @@ main .side {
   text-align: center;
   background-color: #ecc14a;
   width: 7em !important;
-  height: 810px;
+  height: 100%;
   vertical-align: middle;
   border-radius: 0 20px 20px 0;
 }
@@ -140,7 +140,7 @@ main .side {
 main .side a {
   color: #256fa0;
   text-decoration: none;
-  padding: 10px 0;
+  line-height: 2rem;
 }
 
 main .side a:hover {
