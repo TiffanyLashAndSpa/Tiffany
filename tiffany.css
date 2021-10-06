@@ -157,6 +157,10 @@ h2 {
   padding: 0 0 30px 0;
 }
 
+h3 {
+  padding-bottom: 20px;
+}
+
 .reviews-wrapper {
   display: flex;
   flex-direction: column;
