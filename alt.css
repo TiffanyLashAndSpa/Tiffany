@@ -110,6 +110,11 @@ nav a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+nav #menu {
+    float: right;
+    right: 0;
+}
+
 main {
     display: flex;
     align-items: stretch;
