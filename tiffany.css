@@ -292,6 +292,15 @@ footer {
   letter-spacing: 0.05rem;
 }
 
+.faq ul li a {
+  text-decoration: none;
+  color:rgb(27, 117, 133);
+}
+
+.faq ul li a:hover {
+  color:rgb(149, 124, 12);
+}
+
 hr {
   background: rgb(157, 205, 224);
   color: rgb(157, 205, 224);
