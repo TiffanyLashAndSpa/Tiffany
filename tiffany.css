@@ -1,16 +1,13 @@
-body {
-  margin: 0;
-  font-family: Playfair Display, serif, Arial, Helvetica;
-  --link-color: #8231b1;
-  z-index: -1;
-  line-height: 2rem;
-  background: linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100% !important;
+}
+
+body {
+  background: linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
+  line-height: 2rem;
 }
 
 header {
@@ -227,7 +224,6 @@ section div {
 }
 
 .text {
-  height: auto;
   line-height: 25px;
   letter-spacing: 0.7px;
   display: flex;
@@ -237,6 +233,7 @@ section div {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
 }
 
 .map {
@@ -273,6 +270,8 @@ td {
 }
 
 footer {
+  width: 100%;
+  height: auto;
   text-align: center;
   clear: both;
   background-color: #71abd1;
