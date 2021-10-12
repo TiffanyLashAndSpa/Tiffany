@@ -179,6 +179,7 @@ main .side a {
   color: #256fa0;
   text-decoration: none;
   line-height: 1.7rem;
+  padding: 15px;
 }
 
 main .side a:hover {
