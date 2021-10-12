@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
-  background: linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
-  line-height: 2rem;
+:root {
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
 }
 
 header {
@@ -21,7 +21,6 @@ header #cloud {
   object-fit: cover;
   position: absolute;
   opacity: 80%;
-  overflow: hidden;
 }
 
 header .title {
@@ -55,7 +54,7 @@ header .title {
 
 .social-media ul li a {
   border-radius: 50%;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .fab:hover {
@@ -68,7 +67,7 @@ header .title {
 }
 
 .fa-yelp {
-  color:#c41200;
+  color: #c41200;
 }
 
 .fa-facebook:hover {
@@ -88,23 +87,22 @@ nav {
   display: flex;
   position: relative;
   height: 50px;
+  width: 100%;
 }
 
 nav div {
   position: absolute;
+  width: auto;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
 .nav-left {
-  float: left;
   left: 0;
-
 }
 
 .nav-right {
-  float: right;
   right: 0;
 }
 
@@ -128,7 +126,7 @@ nav .nav-right #menuIcon {
 }
 
 nav div #menuIcon:hover {
-  color:rgb(110, 110, 110);
+  color: rgb(110, 110, 110);
 }
 
 nav a:hover {
@@ -142,6 +140,8 @@ main {
   align-items: stretch;
   height: 100%;
   width: 100%;
+  background: linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
+  line-height: 2rem;
 }
 
 main article {
@@ -205,23 +205,18 @@ section {
 }
 
 section div {
+  width: 50%;
   flex: 50%;
 }
 
-.image {
+img {
   width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
-  min-width: 50%;
+  object-fit: contain;
   max-height: 800px;
-}
-
-#fix {
-  width: auto;
-  height: 100%;
 }
 
 .text {
@@ -233,7 +228,7 @@ section div {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -270,6 +265,21 @@ td {
   border: 1px solid black;
 }
 
+.faq {
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.faq ul li a {
+  text-decoration: none;
+  color: rgb(27, 117, 133);
+}
+
+.faq ul li a:hover {
+  color: rgb(149, 124, 12);
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -279,16 +289,6 @@ footer {
   padding: 9px 0;
   font-size: 1.2rem;
   letter-spacing: 0.05rem;
-  margin-top: 30px;
-}
-
-.faq ul li a {
-  text-decoration: none;
-  color:rgb(27, 117, 133);
-}
-
-.faq ul li a:hover {
-  color:rgb(149, 124, 12);
 }
 
 hr {
@@ -322,15 +322,6 @@ hr {
     width: 100%;
   }
 
-  main .side a {
-    padding: 0 20px;
-  }
-
-  
-  main article {
-    margin: 0;
-  }
-
   main .side.show {
     visibility: visible;
     display: block;
@@ -351,18 +342,6 @@ hr {
     font-size: 3.25rem;
   }
 
-  .image {
-    width: 100%;
-    height: 540px;
-    padding: 0;
-    margin: 0;
-  }
-
-  #fix {
-    padding: 0;
-    margin: 0;
-  }
-
   .map {
     padding: 30px 0 0 0 !important;
   }
@@ -372,5 +351,9 @@ hr {
     height: auto;
     margin: 0;
     padding: 0;
+  }
+
+  .text, img {
+    width: 100%;
   }
 }
