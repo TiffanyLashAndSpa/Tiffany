@@ -85,9 +85,9 @@ nav {
   position: -moz-sticky;
   background-color: #e6e6e6;
   display: flex;
-  position: relative;
   height: 50px;
   width: 100%;
+  top: 0;
 }
 
 nav div {
@@ -317,7 +317,7 @@ hr {
     display: none;
     border-radius: 0;
     clear: both;
-    top: 0;
+    top: 50px;
     width: 100%;
     margin: 0;;
   }
