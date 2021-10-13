@@ -1,16 +1,12 @@
-body {
-    margin: 0;
-    font-family: Playfair Display, serif, Arial, Helvetica;
-    --link-color: #8231b1;
-    z-index: -1;
-    display: inline-block;
-    line-height: 2rem;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
 }
 
 header {
@@ -25,7 +21,6 @@ header #cloud {
     object-fit: cover;
     position: absolute;
     opacity: 80%;
-    overflow: hidden;
 }
 
 header .title {
@@ -45,13 +40,12 @@ header .title {
     justify-content: center;
     align-items: center;
     position: absolute;
+    top: 75%;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .fab {
-    width: 100%;
-    height: 100%;
     font-size: 4.5rem;
     text-shadow: 0 0 20px whitesmoke;
     margin: 0 20px;
@@ -85,34 +79,60 @@ header .title {
 }
 
 nav {
-    top: 0;
     position: sticky;
     position: -webkit-sticky;
     position: -oz-sticky;
     position: -moz-sticky;
     background-color: #e6e6e6;
-    text-align: center;
     display: flex;
+    height: 50px;
+    width: 100%;
+    top: 0;
 }
 
-nav a {
+nav div {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    left: 0;
+}
+
+.nav-right {
+    right: 0;
+}
+
+.nav-left a {
     color: #1d1d1d;
     text-decoration: none;
     text-align: center;
-    padding: 10px 15px;
     font-size: 1.4rem;
     letter-spacing: 0.05rem;
+    padding: 5px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-right #menuIcon {
+    visibility: hidden;
+    font-size: 22px;
+    color: #1d1d1d;
+    padding-right: 10px;
+}
+
+nav div #menuIcon:hover {
+    color: rgb(110, 110, 110);
 }
 
 nav a:hover {
     background-color: #3d6bc7;
     color: ghostwhite;
     transition: all 0.3s ease-in-out;
-}
-
-nav #menu {
-    float: right;
-    right: 0;
 }
 
 main {
@@ -139,9 +159,13 @@ h2 {
 .about,
 .contact {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
     clear: both;
     padding: 30px;
+}
+
+.about div, .contact div {
+    flex: 50%;
 }
 
 .about {
@@ -188,7 +212,7 @@ footer {
         line-height: 2.75rem;
     }
 
-    article .about,
+    .about,
     .contact {
         display: flex;
         flex-direction: column;
