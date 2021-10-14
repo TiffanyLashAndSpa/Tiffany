@@ -158,13 +158,15 @@ main .side {
   z-index: 0;
   padding: 10px;
   text-align: center;
-  background-color: #ecc14a;
+  background: linear-gradient(45deg, #86b5ca, #c5dce7);
   width: 7em;
   height: 100%;
   vertical-align: middle;
   border-radius: 0 20px 20px 0;
   margin-top: 100px;
   margin-right: 10px;
+  font-size: 1.3rem;
+  line-height: 3rem;
 }
 
 main .side hr {
