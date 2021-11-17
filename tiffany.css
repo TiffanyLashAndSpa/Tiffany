@@ -265,18 +265,18 @@ td {
   border: 1px solid black;
 }
 
-.faq {
+.qa {
   width: 100%;
   height: auto;
   padding-bottom: 30px;
 }
 
-.faq ul li a {
+.qa ul li a {
   text-decoration: none;
   color: rgb(27, 117, 133);
 }
 
-.faq ul li a:hover {
+.qa ul li a:hover {
   color: rgb(149, 124, 12);
 }
 
