@@ -282,6 +282,7 @@ td {
 }
 
 #links {
+  text-align: left !important;
   text-decoration: none;
   color: #884daa;
 }
