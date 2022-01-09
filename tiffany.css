@@ -281,6 +281,16 @@ td {
   color: rgb(149, 124, 12);
 }
 
+#links {
+  text-decoration: none;
+  color: #884daa;
+}
+
+#links:hover {
+  text-decoration: none;
+  color: #591d7c;
+}
+
 footer {
   width: 100%;
   height: auto;
