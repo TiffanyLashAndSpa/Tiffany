@@ -5,7 +5,15 @@
 }
 
 :root {
+  -webkit-scroll-behavior: smooth;
+  -o-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
   scroll-behavior: smooth;
+  -webkit-scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
+  -o-scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
+  -moz-scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
+  -ms-scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
   scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
 }
 
@@ -18,6 +26,10 @@ header {
 header #cloud {
   width: 100%;
   height: 100%;
+  -webkit-object-fit: cover;
+  -o-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
   object-fit: cover;
   position: absolute;
   opacity: 80%;
@@ -35,11 +47,11 @@ header .title {
 }
 
 .social-media {
-  display: flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -o-flex;
+  display: flex;
   list-style-type: none;
   justify-content: center;
   align-items: center;
@@ -83,11 +95,16 @@ header .title {
 }
 
 nav {
-  position: sticky;
   position: -webkit-sticky;
   position: -oz-sticky;
   position: -moz-sticky;
+  position: -ms-sticky;
+  position: sticky;
   background-color: #e6e6e6;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   display: flex;
   height: 50px;
   width: 100%;
@@ -98,11 +115,11 @@ nav div {
   position: absolute;
   width: auto;
   height: 100%;
-  display: flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -o-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -122,6 +139,10 @@ nav div {
   letter-spacing: 0.05rem;
   padding: 5px 10px;
   height: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   display: flex;
   align-items: center;
 }
@@ -138,6 +159,10 @@ nav div #menuIcon:hover {
 }
 
 nav a:hover {
+  -webkit-background-color: #3d6bc7;
+  -o-background-color: #3d6bc7;
+  -ms-background-color: #3d6bc7;
+  -moz-background-color: #3d6bc7;
   background-color: #3d6bc7;
   color: ghostwhite;
   transition: all 0.3s ease-in-out;
@@ -148,14 +173,18 @@ nav a:hover {
 }
 
 main {
-  display: flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -o-flex;
+  display: flex;
   align-items: stretch;
   height: 100%;
   width: 100%;
+  background: -webkit-linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
+  background: -moz-linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
+  background: -o-linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
+  background: -ms-linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
   background: linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
   line-height: 2rem;
 }
@@ -166,19 +195,23 @@ main article {
 }
 
 main .side {
-  display: flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -o-flex;
+  display: flex;
   flex-direction: column;
-  position: sticky;
   position: -webkit-sticky;
   position: -ms-sticky;
   position: -o-sticky;
   position: -moz-sticky;
+  position: sticky;
   top: 75px;
   text-align: center;
+  -webkit-background: linear-gradient(45deg, #86b5ca, #c5dce7);
+  -moz-background: linear-gradient(45deg, #86b5ca, #c5dce7);
+  -o-background: linear-gradient(45deg, #86b5ca, #c5dce7);
+  -ms-background: linear-gradient(45deg, #86b5ca, #c5dce7);
   background: linear-gradient(45deg, #86b5ca, #c5dce7);
   width: auto;
   height: 100%;
@@ -224,11 +257,11 @@ h2 {
 }
 
 section {
-  display: flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -o-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -244,13 +277,17 @@ section div {
 img {
   width: 50%;
   height: 100%;
-  display: flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -o-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-object-fit: contain;
+  -o-object-fit: contain;
+  -ms-object-fit: contain;
+  -moz-object-fit: contain;
   object-fit: contain;
   max-height: 800px;
 }
@@ -261,11 +298,11 @@ img {
   display: flex;
   flex-direction: column;
   padding: 0 30px;
-  display: flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -o-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -275,11 +312,11 @@ img {
 .map {
   width: 100%;
   height: auto;
-  display: flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -o-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -291,11 +328,11 @@ iframe {
 
 .table {
   width: 100%;
-  display: flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
   display: -o-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -344,6 +381,10 @@ footer {
   height: auto;
   text-align: center;
   clear: both;
+  -webkit-background-color: #71abd1;
+  -o-background-color: #71abd1;
+  -moz-background-color: #71abd1;
+  -ms-background-color: #71abd1;
   background-color: #71abd1;
   padding: 9px 0;
   font-size: 1.2rem;
@@ -351,6 +392,10 @@ footer {
 }
 
 hr {
+  -webkit-background: rgb(157, 205, 224);
+  -o-background: rgb(157, 205, 224);
+  -moz-background: rgb(157, 205, 224);
+  -ms-background: rgb(157, 205, 224);
   background: rgb(157, 205, 224);
   color: rgb(157, 205, 224);
   transition: all 0.4s ease-in-out;
