@@ -35,8 +35,12 @@ header .title {
 }
 
 .social-media {
-  list-style-type: none;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  list-style-type: none;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -95,6 +99,10 @@ nav div {
   width: auto;
   height: 100%;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   align-items: center;
 }
 
@@ -141,6 +149,10 @@ nav a:hover {
 
 main {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   align-items: stretch;
   height: 100%;
   width: 100%;
@@ -155,9 +167,16 @@ main article {
 
 main .side {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   flex-direction: column;
-  position: -webkit-sticky;
   position: sticky;
+  position: -webkit-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: -moz-sticky;
   top: 75px;
   text-align: center;
   background: linear-gradient(45deg, #86b5ca, #c5dce7);
@@ -174,6 +193,10 @@ main .side {
 main .side hr {
   text-align: center;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   justify-self: center;
   align-self: center;
   width: 100%;
@@ -202,6 +225,10 @@ h2 {
 
 section {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -218,6 +245,10 @@ img {
   width: 50%;
   height: 100%;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   justify-content: center;
   align-items: center;
   object-fit: contain;
@@ -231,6 +262,10 @@ img {
   flex-direction: column;
   padding: 0 30px;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -241,6 +276,10 @@ img {
   width: 100%;
   height: auto;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   justify-content: center;
   align-items: center;
 }
@@ -253,6 +292,10 @@ iframe {
 .table {
   width: 100%;
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
   justify-content: center;
   align-items: center;
 }
@@ -328,7 +371,6 @@ hr {
   }
 
   main .side {
-    position: sticky;
     visibility: hidden;
     display: none;
     border-radius: 0;
