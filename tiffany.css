@@ -228,7 +228,7 @@ main article {
   padding: 0.5rem;
 }
 
-main .side hr {
+.side hr {
   text-align: center;
   display: flex;
   display: -webkit-flex;
@@ -240,14 +240,14 @@ main .side hr {
   width: 100%;
 }
 
-main .side a {
+.side a {
   color: #256fa0;
   text-decoration: none;
   line-height: 1.7rem;
   padding: 1.5px;
 }
 
-main .side a:hover {
+.side a:hover {
   color: purple;
   transition: all 0.3s ease-in-out;
 }
@@ -429,13 +429,21 @@ hr {
     width: 100%;
     margin: 0;
     line-height: 3rem;
-    padding: 10px;
     position: -webkit-fixed;
     position: -ms-fixed;
     position: -o-fixed;
     position: -moz-fixed;
     position: fixed;
     height: auto;
+  }
+
+  .side a {
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .side a:hover {
+    background-color:rgb(200, 225, 245);
   }
 
   .side.show {
