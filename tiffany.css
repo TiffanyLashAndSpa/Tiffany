@@ -5,16 +5,19 @@
 }
 
 :root {
-  -webkit-scroll-behavior: smooth;
-  -o-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
-  scroll-behavior: smooth;
   -webkit-scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
   -o-scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
   -moz-scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
   -ms-scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
   scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
+}
+
+html {
+  -webkit-scroll-behavior: smooth;
+  -o-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -24,6 +27,7 @@ header {
 }
 
 header #cloud {
+  top: 50px;
   width: 100%;
   height: 100%;
   -webkit-object-fit: cover;
@@ -95,11 +99,11 @@ header .title {
 }
 
 nav {
-  position: -webkit-sticky;
-  position: -oz-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: sticky;
+  position: -webkit-fixed;
+  position: -oz-fixed;
+  position: -moz-fixed;
+  position: -ms-fixed;
+  position: fixed;
   background-color: #e6e6e6;
   display: -webkit-flex;
   display: -ms-flex;
@@ -187,6 +191,7 @@ main {
   background: -ms-linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
   background: linear-gradient(5deg, rgb(211, 229, 236), #f5dede);
   line-height: 2rem;
+  margin-top: 25px;
 }
 
 main article {
@@ -194,7 +199,7 @@ main article {
   height: 100%;
 }
 
-main .side {
+.side {
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
@@ -415,7 +420,7 @@ hr {
     flex-direction: column;
   }
 
-  main .side {
+  .side {
     visibility: hidden;
     display: none;
     border-radius: 0;
@@ -425,9 +430,15 @@ hr {
     margin: 0;
     line-height: 3rem;
     padding: 10px;
+    position: -webkit-fixed;
+    position: -ms-fixed;
+    position: -o-fixed;
+    position: -moz-fixed;
+    position: fixed;
+    height: auto;
   }
 
-  main .side.show {
+  .side.show {
     visibility: visible;
     display: block;
   }
