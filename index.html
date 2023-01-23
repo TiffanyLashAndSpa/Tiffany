@@ -1,392 +1,395 @@
-<!--@author Kyle Huang aka sharquan3-->
+<!--
+  file: index.html
+  author :Kyle Huang
+
+  Contains the structure and content for Tiffany Lash and Spa business website.
+-->
+
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Tiffany Lash & Spa: Provides eyelash extension, facial, and cosmetic products" />
+    <meta name="keywords" content="Tiffany Lash & Spa,Tiffany Lash and Spa,Tiffany,Spa,eyelash,facial,cosmetics,high quality,Bellevue" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Kyle Huang" content="Email: kylehuang041@gmail.com" />
+    <link rel="icon" href="images/favicon.ico?v=2" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="tiffany.css" />
+    <script src="https://kit.fontawesome.com/e3083b4528.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <title>Tiffany Lash and Spa</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Tiffany Lash & Spa: Provides eyelash extension, facial, and cosmetic products" />
-  <meta name="keytext"
-    content="Tiffany Lash & Spa,Tiffany Lash and Spa,Tiffany,Spa,eyelash,facial,cosmetics,high quality,Bellevue" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="images/favicon.ico?v=2" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="tiffany.css" />
-  <title>Tiffany Lash and Spa</title>
-</head>
+  <body>
+    <header>
+      <img id="cloud" src="images/ocean3.jpg" />
+      <div class="title">
+        <h1>Tiffany Lash & Spa</h1>
+      </div>
+      <ul class="social-media">
+        <li>
+          <a target="_blank" href="https://www.facebook.com/Tiffany-Lash-Spa-100665078441316">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank"
+            href="https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)">
+            <i class="fab fa-yelp"></i>
+          </a>
+        </li>
+      </ul>
+      <nav>
+        <div class="nav-left">
+          <a href="about.html#bottom">About</a>
+          <a href="contact.html#bottom">Contact</a>
+        </div>
+    
+        <div class="nav-right">
+          <i class="fas fa-bars" id="menuIcon"></i>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <img id="cloud" src="images/ocean3.jpg" />
-    <div class="title">
-      <h1>Tiffany Lash & Spa</h1>
-    </div>
-    <ul class="social-media">
-      <li>
-        <a target="_blank" href="https://www.facebook.com/Tiffany-Lash-Spa-100665078441316">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li>
+    <main>
+      <div class="side">
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
+        <a href="#services">Services</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#spa">Spa</a>
+        <a href="#health">Health</a>
+        <a href="#eyelash">Eyelash</a>
+        <a href="#qa">Q&A</a>
+        <hr size="1" width="100%" style="color: purple; margin: 10px 0" />
+        <a target="_blank" href="https://www.facebook.com/Tiffany-Lash-Spa-100665078441316" target="_blank">Facebook</a>
         <a target="_blank"
-          href="https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)">
-          <i class="fab fa-yelp"></i>
-        </a>
-      </li>
-    </ul>
-    <nav>
-      <div class="nav-left">
-        <a href="about.html#bottom">About</a>
-        <a href="contact.html#bottom">Contact</a>
+          href="https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+          target="_blank">Yelp Reviews</a>
+        <hr size="1" width="100%" style="color: purple; margin: 10px 0" />
+        <a href="#top">[Top]</a>
+        <a href="#bottom">[Bottom]</a>
       </div>
-  
-      <div class="nav-right">
-        <i class="fas fa-bars" id="menuIcon"></i>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <div class="side">
-      <a href="#reviews">Reviews</a>
-      <a href="#location">Location</a>
-      <a href="#services">Services</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#spa">Spa</a>
-      <a href="#health">Health</a>
-      <a href="#eyelash">Eyelash</a>
-      <a href="#qa">Q&A</a>
-      <hr size="1" width="100%" style="color: purple; margin: 10px 0" />
-      <a target="_blank" href="https://www.facebook.com/Tiffany-Lash-Spa-100665078441316" target="_blank">Facebook</a>
-      <a target="_blank"
-        href="https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
-        target="_blank">Yelp Reviews</a>
-      <hr size="1" width="100%" style="color: purple; margin: 10px 0" />
-      <a href="#top">[Top]</a>
-      <a href="#bottom">[Bottom]</a>
-    </div>
+      <article>
+        <section class="spa" id="spa">
+          <img class="image" src="images/cosmetics1.jpg" alt="Cosmetics">
+          <div class="text">
+            <h2>Why You Should Get Eyelash Extensions</h2><br>
+            <p>
+              Eyelash extensions will give you longer, thicker and very natural looking eyelashes. They look so natural
+              no one will know they are not yours! Eyelash extensions are worn by famous celebrities like Nicole Kidman,
+              Star Jones, Paris Hilton, Kim Kardashian, Lindsay Lohan, Gwen Stefani, Lucy Liu, Naomi Campbell and Liz
+              Hurley
+              to name a few. But you don't have to be a celebrity to wear them. Women everywhere are catching on and
+              becoming Lash Addicted!<br><br>
 
-    <article>
-      <section class="spa" id="spa">
-        <img class="image" src="images/cosmetics1.jpg" alt="Cosmetics">
-        <div class="text">
-          <h2>Why You Should Get Eyelash Extensions</h2><br>
-          <p>
-            Eyelash extensions will give you longer, thicker and very natural looking eyelashes. They look so natural
-            no one will know they are not yours! Eyelash extensions are worn by famous celebrities like Nicole Kidman,
-            Star Jones, Paris Hilton, Kim Kardashian, Lindsay Lohan, Gwen Stefani, Lucy Liu, Naomi Campbell and Liz
-            Hurley
-            to name a few. But you don't have to be a celebrity to wear them. Women everywhere are catching on and
-            becoming Lash Addicted!<br><br>
+              LASH OUT! eyelash extension professionals specialize in this revolutionary new service that will extend your
+              natural eyelashes and draw attention to your eyes. Extensions are perfect for everyday wear as well as
+              special
+              occasions. They are semi-permanent and made from synthetic fibers. Each lash is applied one by one to your
+              own natural lashes. With proper care and touchup visits they can last a very long time. Normally a person's
+              natural eyelash falls out every 60 - 90 days and a new lash grows in immediately. Therefore, it is necessary
+              to
+              get touch-ups to fill in the fallen lashes. About every 2 to 3 weeks is recommended, however, this will vary
+              from
+              person to person. Your natural lash cycle as well as how you take care of your lashes will affect how long
+              they
+              last. Some LASH OUT! clients have had their extensions for over a year with regular touchups visits.<br><br>
 
-            LASH OUT! eyelash extension professionals specialize in this revolutionary new service that will extend your
-            natural eyelashes and draw attention to your eyes. Extensions are perfect for everyday wear as well as
-            special
-            occasions. They are semi-permanent and made from synthetic fibers. Each lash is applied one by one to your
-            own natural lashes. With proper care and touchup visits they can last a very long time. Normally a person's
-            natural eyelash falls out every 60 - 90 days and a new lash grows in immediately. Therefore, it is necessary
-            to
-            get touch-ups to fill in the fallen lashes. About every 2 to 3 weeks is recommended, however, this will vary
-            from
-            person to person. Your natural lash cycle as well as how you take care of your lashes will affect how long
-            they
-            last. Some LASH OUT! clients have had their extensions for over a year with regular touchups visits.<br><br>
+              The extensions are single strands of synthetic eyelashes that are curved to replicate a natural eyelash.
+              They
+              provide length and thickness to your own lashes and are available in varying lengths and thickness. They are
+              applied to your individual eyelashes, one lash at a time. There is no need for mascara even though a water
+              based mascara is fine to use. The result is thicker, longer, eye opening eyelashes that are safe in the
+              shower,
+              while swimming, sleeping or exercising.<br><br>
 
-            The extensions are single strands of synthetic eyelashes that are curved to replicate a natural eyelash.
-            They
-            provide length and thickness to your own lashes and are available in varying lengths and thickness. They are
-            applied to your individual eyelashes, one lash at a time. There is no need for mascara even though a water
-            based mascara is fine to use. The result is thicker, longer, eye opening eyelashes that are safe in the
-            shower,
-            while swimming, sleeping or exercising.<br><br>
+              Eyelash extensions are great for everyday wear or special occasions. Eyelash extensions brighten and open
+              your eyes. Eyelash extensions have gained a tremendous amount of popularity in the last couple of years
+              because the look achieved is so natural. Whether you are looking for an everyday look, lashes for your
+              wedding
+              day or just a weekend away LASH OUT! professionals have a perfected technique that will transform your look
+              to WOW!
+            </p>
+            <span>- <a id="links" target="_blank" href="https://www.simplyeyelash.com/eyelash-extensions1.html">simplyeyelash.com</a></span>
+          </div>
+        </section>
 
-            Eyelash extensions are great for everyday wear or special occasions. Eyelash extensions brighten and open
-            your eyes. Eyelash extensions have gained a tremendous amount of popularity in the last couple of years
-            because the look achieved is so natural. Whether you are looking for an everyday look, lashes for your
-            wedding
-            day or just a weekend away LASH OUT! professionals have a perfected technique that will transform your look
-            to WOW!
-          </p>
-          <span>- <a id="links" target="_blank" href="https://www.simplyeyelash.com/eyelash-extensions1.html">simplyeyelash.com</a></span>
-        </div>
-      </section>
+        <hr>
 
-      <hr>
-
-      <section class="services" id="services">
-        <img class="image" src="images/cosmetics8.jpg" alt="Services" />
-        <div class="text">
-          <h2>Services</h2>
-          <ul>
-            <li>
-              <b>One full set of mink mascara</b> (around 60 lashes per eye, 1
-              hr.): $89
-            </li>
-            <li>
-              <b>One full set of mink dramatic</b> (around 80 lashes per eye, 1
-              hr.): $109
-            </li>
-            <li>
-              <b>Regular Vitamin Anti-Aging Facial</b> (1 hr): $79
-            </li>
-            <li>
-              <b>Premium Vitamin Anti-Aging Facial</b> (1 hr): $89
-            </li>
-            <br />
-          </ul>
-          <h2>Products</h2>
-          Also we're selling High Quality European Cosmetics, come by to our Spa
-          to purchase.
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="schedule" id="schedule">
-        <div class="table">
-          <table>
-            <thead>
-              <tr>
-                <th>Days</th>
-                <th>Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Monday</td>
-                <td>10:00 AM - 5:30 PM</td>
-              </tr>
-              <tr>
-                <td>Tuesday</td>
-                <td>10:00 AM - 5:30 PM</td>
-              </tr>
-              <tr>
-                <td>Wednesday</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <td>Thursday</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <td>Friday</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <td>Saturday</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <td>Sunday</td>
-                <td>10:00 AM - 5:30 PM</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="text">
-          <h2>Schedule</h2><br>
-          <p>
-            We are open from Monday, Tuesday, and Sunday from 10 AM to 5:30 PM. Text to make an
-            appointment for eyelash extension, facial, or if you have any questions. Also, we sell cosmetics so come by
-            at this time to check them out.
-            Phone: (425)-531-8481
-          </p>
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="location" id="location">
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.1301141382132!2d-122.15520168403219!3d47.62360197918582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906daad5d24f23%3A0xbc37248cb532bb45!2sTiffany%20Lash%20%26%20Spa!5e0!3m2!1sen!2sus!4v1599622006246!5m2!1sen!2sus"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0">
-          </iframe>
-        </div>
-        <div class="text">
-          <h2>Location</h2><br>
-          <p>
-            <strong>Address</strong>: 1530 140th Ave NE #112 Bellevue, WA 98005<br>
-            <strong>Area</strong>: Creekside<br>
-          </p>
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="health" id="health">
-        <img class="image" id="fix" src="images/health1.jpg" alt="Health">
-        <div class="text">
-          <h2>Health Concerns</h2><br>
-          <p><b>What should you do before your Eyelash Extension appointment?</b><br>
-            Inform your eyelash extension professional any information on adhesive allergies when making the
-            appointment.
-            Any type of allergy to band aids, glues, stickers, and/or rubber can cause a reaction. Your extensionist can
-            perform a patch test on your skin to check for a possible allergy to the adhesive. The patch test will take
-            about 15
-            minutes so let the person taking the appointment know that you have concerns about an allergic reaction.
-            Remove any eye make-up, including mascara. Cleanse your eyelids & lashes thoroughly.
-            The entire eye area should be cosmetic-free so that the stylist can get an unobstructed view of your natural
-            lashes. Most eyelash extensionist will then cleanse the eye with a special cleanser to remove proteins and
-            oil
-            residue. A clean surface is vital in creating a strong bond.
-            Remove contact lenses before application.
-            <br>
-            <span>- <a id="links" target="_blank" href="https://lavoqueen.com/index.php/lashes-experience">lavoqueen.com</a></span>
-
-            <br><br>
-
-            <strong>What should you do After your Eyelash Extension appointment?</strong>
+        <section class="services" id="services">
+          <img class="image" src="images/cosmetics8.jpg" alt="Services" />
+          <div class="text">
+            <h2>Services</h2>
             <ul>
-              <li>Do not perm or tint lashes after lash extension application.</li>
-              <li>Do not use a regular eyelash curler to curl Extensions (you won't need to curl your extensions).</li>
-              <li>Do not rub your eyes or lashes when washing your face. Clean around the eyes with a wash cloth.</li>
-              <li>Do not pull your lash extensions, as it will take out your own lash as well!</li>
-              <li>Do not go in a Sauna while wearing Eyelash Extensions for at least for 48hrs. Do not get them wet at
-                all for 24hrs.</li>
-              <li>If you choose to wear mascara - only apply to the tips and use water-based mascara that washes off
-                easily.</li>
-              <li>Do not try to remove the Extensions on your own, call me and I will remove them without harming your
-                natural lashes.</li>
-              <li>Do not cut the Extensions (you may cut your own lashes).</li>
-              <li>Clean your eye make-up, but be gentle with your Extensions.</li>
-              <li>Remember to come in for touch ups (2-4 weeks).</li>
-              <li>Never tug, twist, pick or pull at your lashes or extensions.</li>
-              <li>Treat your eyes gently - as if you have makeup on that you don't want to smudge.</li>
-              <li>Brush and groom your lashes gently with a disposable mascara spoolie or eye shadow brush (best
-                choice).</li>
-              <li>Try to sleep on your back or side, avoid smashing your lashes completely as you sleep.</li>
-              <li>When using night creams/serums, apply sparingly and blot off excess.</li>
-              <li>When you touch your lashes, always use upward, sweeping motions - no side to side rubbing at the lash
-                line.</li>
-              <li>Keep your fingers off your lashes. Every time you touch them you are transferring natural oil and
-                germs.</li>
+              <li>
+                <b>One full set of mink mascara</b> (around 60 lashes per eye, 1
+                hr.): $89
+              </li>
+              <li>
+                <b>One full set of mink dramatic</b> (around 80 lashes per eye, 1
+                hr.): $109
+              </li>
+              <li>
+                <b>Regular Vitamin Anti-Aging Facial</b> (1 hr): $79
+              </li>
+              <li>
+                <b>Premium Vitamin Anti-Aging Facial</b> (1 hr): $89
+              </li>
+              <br />
             </ul>
-            <span>- <a id="links" target="_blank" href="http://www.kellyseyelashextensions.com/lash-care.html">kellyseyelashextensions.com</a></span>
-          </p>
-        </div>
-      </section>
+            <h2>Products</h2>
+            Also we're selling High Quality European Cosmetics, come by to our Spa
+            to purchase.
+          </div>
+        </section>
 
-      <hr>
+        <hr>
 
-      <section class="eyelash" id="eyelash">
-        <img class="image" id="fix" src="images/cosmetics10.jpg" alt="Eyelashes">
-        <div class="text" id="eyelash-text">
-          <h2>Eyelash Product Information</h2><br>
-          <p>
-            <b>REVITALASH® ADVANCED</b><br>
-            <em>Eyelash Conditioner</em><br><br>
-            Original, one-of-a-kind, Ophthalmologist developed lash conditioner that enhances the look of lashes and
-            protects against breakage, while improving health, flexibility and strength, for lashes that thrive,
-            naturally.<br><br>
-            <b>Features and benefits:</b><br>
+        <section class="schedule" id="schedule">
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Days</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>10:00 AM - 5:30 PM</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>10:00 AM - 5:30 PM</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>Closed</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>10:00 AM - 5:30 PM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text">
+            <h2>Schedule</h2><br>
+            <p>
+              We are open from Monday, Tuesday, and Sunday from 10 AM to 5:30 PM. Text to make an
+              appointment for eyelash extension, facial, or if you have any questions. Also, we sell cosmetics so come by
+              at this time to check them out.
+              Phone: (425)-531-8481
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="location" id="location">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.1301141382132!2d-122.15520168403219!3d47.62360197918582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906daad5d24f23%3A0xbc37248cb532bb45!2sTiffany%20Lash%20%26%20Spa!5e0!3m2!1sen!2sus!4v1599622006246!5m2!1sen!2sus"
+              width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0">
+            </iframe>
+          </div>
+          <div class="text">
+            <h2>Location</h2><br>
+            <p>
+              <strong>Address</strong>: 1530 140th Ave NE #112 Bellevue, WA 98005<br>
+              <strong>Area</strong>: Creekside<br>
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="health" id="health">
+          <img class="image" id="fix" src="images/health1.jpg" alt="Health">
+          <div class="text">
+            <h2>Health Concerns</h2><br>
+            <p><b>What should you do before your Eyelash Extension appointment?</b><br>
+              Inform your eyelash extension professional any information on adhesive allergies when making the
+              appointment.
+              Any type of allergy to band aids, glues, stickers, and/or rubber can cause a reaction. Your extensionist can
+              perform a patch test on your skin to check for a possible allergy to the adhesive. The patch test will take
+              about 15
+              minutes so let the person taking the appointment know that you have concerns about an allergic reaction.
+              Remove any eye make-up, including mascara. Cleanse your eyelids & lashes thoroughly.
+              The entire eye area should be cosmetic-free so that the stylist can get an unobstructed view of your natural
+              lashes. Most eyelash extensionist will then cleanse the eye with a special cleanser to remove proteins and
+              oil
+              residue. A clean surface is vital in creating a strong bond.
+              Remove contact lenses before application.
+              <br>
+              <span>- <a id="links" target="_blank" href="https://lavoqueen.com/index.php/lashes-experience">lavoqueen.com</a></span>
+
+              <br><br>
+
+              <strong>What should you do After your Eyelash Extension appointment?</strong>
+              <ul>
+                <li>Do not perm or tint lashes after lash extension application.</li>
+                <li>Do not use a regular eyelash curler to curl Extensions (you won't need to curl your extensions).</li>
+                <li>Do not rub your eyes or lashes when washing your face. Clean around the eyes with a wash cloth.</li>
+                <li>Do not pull your lash extensions, as it will take out your own lash as well!</li>
+                <li>Do not go in a Sauna while wearing Eyelash Extensions for at least for 48hrs. Do not get them wet at
+                  all for 24hrs.</li>
+                <li>If you choose to wear mascara - only apply to the tips and use water-based mascara that washes off
+                  easily.</li>
+                <li>Do not try to remove the Extensions on your own, call me and I will remove them without harming your
+                  natural lashes.</li>
+                <li>Do not cut the Extensions (you may cut your own lashes).</li>
+                <li>Clean your eye make-up, but be gentle with your Extensions.</li>
+                <li>Remember to come in for touch ups (2-4 weeks).</li>
+                <li>Never tug, twist, pick or pull at your lashes or extensions.</li>
+                <li>Treat your eyes gently - as if you have makeup on that you don't want to smudge.</li>
+                <li>Brush and groom your lashes gently with a disposable mascara spoolie or eye shadow brush (best
+                  choice).</li>
+                <li>Try to sleep on your back or side, avoid smashing your lashes completely as you sleep.</li>
+                <li>When using night creams/serums, apply sparingly and blot off excess.</li>
+                <li>When you touch your lashes, always use upward, sweeping motions - no side to side rubbing at the lash
+                  line.</li>
+                <li>Keep your fingers off your lashes. Every time you touch them you are transferring natural oil and
+                  germs.</li>
+              </ul>
+              <span>- <a id="links" target="_blank" href="http://www.kellyseyelashextensions.com/lash-care.html">kellyseyelashextensions.com</a></span>
+            </p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="eyelash" id="eyelash">
+          <img class="image" id="fix" src="images/cosmetics10.jpg" alt="Eyelashes">
+          <div class="text" id="eyelash-text">
+            <h2>Eyelash Product Information</h2><br>
+            <p>
+              <b>REVITALASH® ADVANCED</b><br>
+              <em>Eyelash Conditioner</em><br><br>
+              Original, one-of-a-kind, Ophthalmologist developed lash conditioner that enhances the look of lashes and
+              protects against breakage, while improving health, flexibility and strength, for lashes that thrive,
+              naturally.<br><br>
+              <b>Features and benefits:</b><br>
+              <ul>
+                <li>Conditions the eyelashes to help protect from brittleness and breakage.</li>
+                <li>Helps improve flexibility, moisture and shine.</li>
+                <li>Helps defend eyelashes from daily aggressors.</li>
+                <li>Enhances the appearance of beautiful, younger-looking, more luxurious eyelashes.</li>
+                <li>High impact BioPeptin Complex™, peptides and botanicals saturate the lashes with moisture, keeping
+                  them soft, luxurious and healthy-looking.</li>
+              </ul>
+              <b><br>In a study:</b>
+              <ul>
+                <li>98% of users reported improved lash appearance.</li>
+                <li>98% of users reported healthier-looking lashes.</li>
+                <li>98% of users reported stronger lashes.</li><br>
+              </ul>
+              How to use: Wash hands and face with a mild soap and water. Let face and eye area dry completely prior to
+              application. Once a day, apply a thin line to clean and dry eyelashes above the level of the skin. One brush
+              stroke is sufficient to cover eyelashes. Only a small quantity is needed to beautify and promote the
+              attractiveness of natural lashes. For best results, use consistently. Be sure to let dry before applying
+              makeup. If using a makeup remover, be sure to wash off all residue prior to application. There is no added
+              benefit to using more than once per day.
+              $150.00/each ( 3.5ML )
+            </p>
+            <span>- <a id="links" href="https://www.revitalash.com/products/revitalash-advanced-eyelash-conditioner" target="_blank">revitalash.com</a></span>
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="penalty" id="penalty">
+          <img class="image" src="images/money1.jpg" alt="Penalty">
+          <div class="text">
+            <h2>Penalty</h2><br>
+            <p>If an appointment is not cancelled within 24 hours in advance, you will be charged with a $50 fee.</p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="qa" id="qa">
+          <img class="image" src="images/qa1.jpg" alt="Questions and Answers image">
+          <div class="text">
+            <h2>Questions & Answers</h2><br>
             <ul>
-              <li>Conditions the eyelashes to help protect from brittleness and breakage.</li>
-              <li>Helps improve flexibility, moisture and shine.</li>
-              <li>Helps defend eyelashes from daily aggressors.</li>
-              <li>Enhances the appearance of beautiful, younger-looking, more luxurious eyelashes.</li>
-              <li>High impact BioPeptin Complex™, peptides and botanicals saturate the lashes with moisture, keeping
-                them soft, luxurious and healthy-looking.</li>
+              <li>
+                <b>What is your contact info? How can I make a reservation for an appointment?</b><br>
+                Text us for an appointment or questions: (425)-531-8481<br>
+                Click for more information: <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <b>When are you open?</b><br>
+                Open: Monday, Tuesday, and Sunday.<br>
+                Close: Thursday, Friday, Saturday.
+                <p>Click for more information: <a href="#schedule">Schedule</a></p>
+              </li>
+              <li>
+                <b>What is the location?</b><br>
+                Location: 1530 140th AVE NE #112 Bellevue, WA 98005
+                <p>Click for more information: <a href="#location">Location</a></p>
+
+              </li>
+              <li>
+                <b>What are the services? How much do your services cost? Do you sell any products? How much are your Cosmetic Products?</b><br>
+                Services are from $79-$109. Yes, we sell high quality European cosmetics (prices vary).
+                <p>Click for more information: <a href="#services">Services</a></p>
+              </li>
+              <li>
+                <b>How do the services usually take?</b><br>About an hour.
+              </li>
+              <li>
+                <b>Are there any health risks?</b><br>
+                <p>Click for information: <a href="#health">Health</a></p>
+              </li>
+              <li>
+                <b>Are your products high quality?</b><br>
+                We have cosmetic products from Dr.Grandel, Phyris, and wilmaschumann (all high quality and popular).
+                <p>Click for information:
+                  <a href="#services">Products</a>, 
+                  <a href="#eyelash">Eyelash Product Information</a>
+                </p>
+              </li>
+              <li>
+                <b>How can I cancel or reschedule my appointment?</b><br />
+                Text within 24 hours or you will be fined $50.
+              </li>
+              <li>
+                <b>Where can I check the reviews?</b><br />
+                <a href="https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue" target="_blank">Yelp Reviews</a>,
+                <a href="https://www.google.com/search?client=firefox-b-1-d&q=tiffany+lash+and+spa" target="_blank">Google Reviews</a>
+              </li>
+              <li>
+                <b>Do you guys have a social media account?</b><br>Yes: 
+                <a href="https://www.facebook.com/Tiffany-Lash-Spa-100665078441316"
+                  target="_blank">
+                  Facebook Page
+                </a>
+              </li>
             </ul>
-            <b><br>In a study:</b>
-            <ul>
-              <li>98% of users reported improved lash appearance.</li>
-              <li>98% of users reported healthier-looking lashes.</li>
-              <li>98% of users reported stronger lashes.</li><br>
-            </ul>
-            How to use: Wash hands and face with a mild soap and water. Let face and eye area dry completely prior to
-            application. Once a day, apply a thin line to clean and dry eyelashes above the level of the skin. One brush
-            stroke is sufficient to cover eyelashes. Only a small quantity is needed to beautify and promote the
-            attractiveness of natural lashes. For best results, use consistently. Be sure to let dry before applying
-            makeup. If using a makeup remover, be sure to wash off all residue prior to application. There is no added
-            benefit to using more than once per day.
-            $150.00/each ( 3.5ML )
-          </p>
-          <span>- <a id="links" href="https://www.revitalash.com/products/revitalash-advanced-eyelash-conditioner" target="_blank">revitalash.com</a></span>
-        </div>
-      </section>
+          </div>
+        </section>
+      </article>
+    </main>
 
-      <hr>
-
-      <section class="penalty" id="penalty">
-        <img class="image" src="images/money1.jpg" alt="Penalty">
-        <div class="text">
-          <h2>Penalty</h2><br>
-          <p>If an appointment is not cancelled within 24 hours in advance, you will be charged with a $50 fee.</p>
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="qa" id="qa">
-        <img class="image" src="images/qa1.jpg" alt="Questions and Answers image">
-        <div class="text">
-          <h2>Questions & Answers</h2><br>
-          <ul>
-            <li>
-              <b>What is your contact info? How can I make a reservation for an appointment?</b><br>
-              Text us for an appointment or questions: (425)-531-8481<br>
-              Click for more information: <a href="contact.html">Contact</a>
-            </li>
-            <li>
-              <b>When are you open?</b><br>
-              Open: Monday, Tuesday, and Sunday.<br>
-              Close: Thursday, Friday, Saturday.
-              <p>Click for more information: <a href="#schedule">Schedule</a></p>
-            </li>
-            <li>
-              <b>What is the location?</b><br>
-              Location: 1530 140th AVE NE #112 Bellevue, WA 98005
-              <p>Click for more information: <a href="#location">Location</a></p>
-
-            </li>
-            <li>
-              <b>What are the services? How much do your services cost? Do you sell any products? How much are your Cosmetic Products?</b><br>
-              Services are from $79-$109. Yes, we sell high quality European cosmetics (prices vary).
-              <p>Click for more information: <a href="#services">Services</a></p>
-            </li>
-            <li>
-              <b>How do the services usually take?</b><br>About an hour.
-            </li>
-            <li>
-              <b>Are there any health risks?</b><br>
-              <p>Click for information: <a href="#health">Health</a></p>
-            </li>
-            <li>
-              <b>Are your products high quality?</b><br>
-              We have cosmetic products from Dr.Grandel, Phyris, and wilmaschumann (all high quality and popular).
-              <p>Click for information:
-                <a href="#services">Products</a>, 
-                <a href="#eyelash">Eyelash Product Information</a>
-              </p>
-            </li>
-            <li>
-              <b>How can I cancel or reschedule my appointment?</b><br />
-              Text within 24 hours or you will be fined $50.
-            </li>
-            <li>
-              <b>Where can I check the reviews?</b><br />
-              <a href="https://www.yelp.com/biz/tiffany-lash-and-spa-bellevue" target="_blank">Yelp Reviews</a>,
-              <a href="https://www.google.com/search?client=firefox-b-1-d&q=tiffany+lash+and+spa" target="_blank">Google Reviews</a>
-            </li>
-            <li>
-              <b>Do you guys have a social media account?</b><br>Yes: 
-              <a href="https://www.facebook.com/Tiffany-Lash-Spa-100665078441316"
-                target="_blank">
-                Facebook Page
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </article>
-  </main>
-
-  <footer>
-    <p id="bottom">&#169; 2015-2023, Tiffany Lash & Spa</p>
-  </footer>
-
-  <script src="https://kit.fontawesome.com/e3083b4528.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-</body>
-
+    <footer>
+      <p id="bottom">&#169; 2015-<span id="year"></span>, Tiffany Lash & Spa</p>
+    </footer>
+  </body>
 </html>

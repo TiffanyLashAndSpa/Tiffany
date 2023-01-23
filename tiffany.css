@@ -1,3 +1,10 @@
+/*
+  File: tiffany.css
+  Author: Kyle Huang
+
+  Styles the index.html using flex and grid for responsiveness.
+*/
+
 * {
   margin: 0;
   padding: 0;
