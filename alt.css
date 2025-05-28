@@ -90,6 +90,14 @@ nav {
 	top: 0;
 }
 
+nav, footer {
+  -webkit-background-color: #71abd1;
+  -o-background-color: #71abd1;
+  -moz-background-color: #71abd1;
+  -ms-background-color: #71abd1;
+  background-color: #71abd1;
+}
+
 nav div {
 	position: absolute;
 	width: auto;
