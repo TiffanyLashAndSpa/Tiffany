@@ -199,7 +199,10 @@ nav a:hover {
 
 footer {
   width: 100%;
-  height: auto;
+  height: 3.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   clear: both;
   -webkit-background-color: #71abd1;
@@ -209,5 +212,6 @@ footer {
   background-color: #71abd1;
   padding: 9px 0;
   letter-spacing: 0.05rem;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
