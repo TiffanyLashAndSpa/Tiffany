@@ -72,21 +72,30 @@ header .title {
   height: auto;
 }
 
-.fab {
-  font-size: 4.5rem;
-  text-shadow: 0 0 20px whitesmoke;
-  margin: 0 20px;
-  transition: all 0.2s ease-in-out;
-}
-
 .social-media ul li a {
   border-radius: 50%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.fab:hover {
+.fab {
+  font-size: 4.5rem;
+  margin: 0 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.fab, .fa-yelp {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.75);
+}
+
+#facebook-icon, #yelp-icon {
+  font-size: 2.5rem;
+  margin: 0.25rem 0;
+}
+
+.fab:hover, .fa-yelp:hover {
   transform: translate(0, -5%);
   transform: scale(108%);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
 
 .fa-facebook {
