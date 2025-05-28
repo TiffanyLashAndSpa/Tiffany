@@ -1,147 +1,9 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+/*
+  File: tiffany.css
+  Author: Kyle Huang
 
-:root {
-	scroll-behavior: smooth;
-	scrollbar-color: rgb(99, 98, 98) rgb(49, 49, 49);
-}
-
-header {
-	width: 100%;
-	height: 500px;
-	position: relative;
-}
-
-header #cloud {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	position: absolute;
-	opacity: 80%;
-}
-
-header .title {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 30%;
-	font-size: 40px;
-	text-shadow: 0 0 20px #884daa, 0 0 20px red, 0 0 20px yellow;
-	color: #58008b;
-	text-align: center;
-}
-
-.social-media {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 75%;
-	width: 100%;
-	height: auto;
-}
-
-.fab {
-	font-size: 4.5rem;
-	text-shadow: 0 0 20px whitesmoke;
-	margin: 0 20px;
-	transition: all 0.2s ease-in-out;
-}
-
-.social-media ul li a {
-	border-radius: 50%;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-.fab:hover {
-	transform: translate(0, -5%);
-	transform: scale(108%);
-}
-
-.fa-facebook {
-	color: #3b5998;
-}
-
-.fa-yelp {
-	color: #c41200;
-}
-
-.fa-facebook:hover {
-	color: #2c4577;
-}
-
-.fa-yelp:hover {
-	color: #dd220d;
-}
-
-nav {
-	position: sticky;
-	position: -webkit-sticky;
-	position: -oz-sticky;
-	position: -moz-sticky;
-	background-color: #e6e6e6;
-	display: flex;
-	height: 50px;
-	width: 100%;
-	top: 0;
-}
-
-nav, footer {
-  -webkit-background-color: #71abd1;
-  -o-background-color: #71abd1;
-  -moz-background-color: #71abd1;
-  -ms-background-color: #71abd1;
-  background-color: #71abd1;
-}
-
-nav div {
-	position: absolute;
-	width: auto;
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-
-.nav-left {
-	left: 0;
-}
-
-.nav-right {
-	right: 0;
-}
-
-.nav-left a {
-	color: #1d1d1d;
-	text-decoration: none;
-	text-align: center;
-	font-size: 1.4rem;
-	letter-spacing: 0.05rem;
-	padding: 5px 10px;
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-
-nav .nav-right #menuIcon {
-	visibility: hidden;
-	font-size: 22px;
-	color: #1d1d1d;
-	padding-right: 10px;
-}
-
-nav div #menuIcon:hover {
-	color: rgb(110, 110, 110);
-}
-
-nav a:hover {
-	background-color: #3d6bc7;
-	color: ghostwhite;
-	transition: all 0.3s ease-in-out;
-}
+  Styles the index.html using flex and grid for responsiveness.
+*/
 
 main {
 	display: flex;
@@ -205,7 +67,6 @@ h2 {
 .contact {
 	display: flex;
 	flex-direction: row;
-	clear: both;
 	padding: 30px;
 }
 
@@ -213,14 +74,6 @@ h2 {
 .contact div {
 	flex: 50%;
 }
-
-/* .about {
-	background: linear-gradient(45deg, rgb(34, 146, 187), #ed81f7);
-}
-
-.contact {
-	background: linear-gradient(45deg, rgb(153, 235, 59), #eea34e);
-} */
 
 .image {
 	display: block;
