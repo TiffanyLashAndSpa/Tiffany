@@ -92,7 +92,7 @@ h2 {
 	letter-spacing: 0.7px;
 	display: flex;
 	flex-direction: column;
-	padding: 30px;
+	padding: 5rem;
 	width: 100%;
 }
 
@@ -120,14 +120,16 @@ footer {
 
 	.about,
 	.contact {
+		margin-top: 2rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding: 0rem;
 	}
 
 	.image {
-		width: 100%;
+		width: 90%;
 		height: auto;
 	}
 
