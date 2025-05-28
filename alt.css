@@ -214,13 +214,13 @@ h2 {
 	flex: 50%;
 }
 
-.about {
+/* .about {
 	background: linear-gradient(45deg, rgb(34, 146, 187), #ed81f7);
 }
 
 .contact {
 	background: linear-gradient(45deg, rgb(153, 235, 59), #eea34e);
-}
+} */
 
 .image {
 	display: block;
