@@ -140,7 +140,7 @@ nav, footer, .side {
   background-color: #71abd1;
 }
 
-nav div {
+.nav-divs {
   position: absolute;
   width: auto;
   height: 100%;
@@ -152,15 +152,15 @@ nav div {
   align-items: center;
 }
 
-.nav-left {
+#nav-left {
   left: 0;
 }
 
-.nav-right {
+#nav-right {
   right: 0;
 }
 
-.nav-left a {
+#nav-left a {
   color: #1d1d1d;
   text-decoration: none;
   text-align: center;
@@ -174,17 +174,6 @@ nav div {
   display: -o-flex;
   display: flex;
   align-items: center;
-}
-
-nav .nav-right #menuIcon {
-  visibility: hidden;
-  font-size: 22px;
-  color: #1d1d1d;
-  padding-right: 10px;
-}
-
-nav div #menuIcon:hover {
-  color: rgb(110, 110, 110);
 }
 
 nav a:hover {
@@ -214,4 +203,19 @@ footer {
   letter-spacing: 0.05rem;
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+  header .title {
+    font-size: 4.5vw;
+    line-height: 4.4rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .fab {
+    font-size: 3.25rem;
+  }
 }

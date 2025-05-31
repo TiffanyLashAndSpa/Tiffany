@@ -5,6 +5,17 @@
   Styles the index.html using flex and grid for responsiveness.
 */
 
+#menuIcon {
+  visibility: hidden;
+  font-size: 22px;
+  color: #1d1d1d;
+  padding-right: 10px;
+}
+
+#menuIcon:hover {
+  color: rgb(110, 110, 110);
+}
+
 main {
   display: -webkit-flex;
   display: -ms-flex;
@@ -207,8 +218,6 @@ td {
   color: #591d7c;
 }
 
-
-
 hr {
   -webkit-background: rgb(157, 205, 224);
   -o-background: rgb(157, 205, 224);
@@ -233,13 +242,18 @@ hr {
   text-align: left;
 }
 
-@media screen and (max-width: 1000px) {
-  nav .nav-right #menuIcon {
-    visibility: visible;
-  }
+#menuIcon {
+  visibility: hidden;
+  font-size: 24px;
+  cursor: pointer;
+}
 
-  main {
-    flex-direction: column;
+@media screen and (max-width: 1000px) {
+  #menuIcon {
+    visibility: visible;
+    font-size: 24px;
+    cursor: pointer;
+    /* color: black; */
   }
 
   .side {
@@ -273,19 +287,10 @@ hr {
     display: block;
   }
 
-  header .title {
-    font-size: 4.5vw;
-    line-height: 4.4rem;
-  }
-
   section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .fab {
-    font-size: 3.25rem;
   }
 
   .map {
@@ -297,7 +302,7 @@ hr {
     height: auto;
   }
 
-  .text, img {
+  .text {
     width: 100%;
   }
 }
